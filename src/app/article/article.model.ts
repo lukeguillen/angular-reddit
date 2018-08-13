@@ -16,4 +16,9 @@ export class Article{
     voteDown(){
         this.votes -= 1;
     }
+    domain ():string{
+        try{
+            
+        }
+    }
 }
