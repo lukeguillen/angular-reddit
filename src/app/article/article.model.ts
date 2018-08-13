@@ -18,7 +18,10 @@ export class Article{
     }
     domain ():string{
         try{
-            
+            const domainAndPath:string=this.link.split('//')[1];
+            return domainAndPath.split('/')[1];
+        }catch(err){
+            return null;
         }
     }
 }
